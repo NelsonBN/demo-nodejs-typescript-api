@@ -1,0 +1,33 @@
+@Host = http://localhost:3000
+
+GET {{Host}}/products
+Accept: application/json
+
+###
+
+GET {{Host}}/products/44968123-c522-4cc9-a3c6-4b7f89da2291
+Accept: application/json
+
+###
+
+POST {{Host}}/products
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "quantity": 100
+}
+
+###
+
+PUT {{Host}}/products/454aee83-f484-40d7-8ca8-f272b128ebc4
+Content-Type: application/json
+
+{
+    "name": "Product fsd122",
+    "quantity": 111
+}
+
+###
+
+DELETE {{Host}}/products/454aee83-f484-40d7-8ca8-f272b128ebc4
